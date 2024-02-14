@@ -2,7 +2,6 @@ from odoo import models, fields
 
 class OrdenadoresRegistro(models.Model):
     _name = "ordenadores.cochesregistro"
-    
     photo = fields.Binary(string='Imagen de Producto')
     nombre= fields.Text(string='Nombre PC', required=True)
     grafica = fields.Selection([
@@ -27,10 +26,18 @@ class OrdenadoresRegistro(models.Model):
         ('16gb', '16gb'),
         ('32gb', '32gb'),
         ('64gb', '64gb'),
-        ('128gb', '128gb')  # Corregido aquí
+        ('128gb', '128gb')
     ], string='Memoria RAM')
     
+
+    opciones = [
+        ('Con SO', 'Con SO'),
+        ('Sin SO', 'Sin SO'),
+    ]
+
+    ssoo = fields.Selection(opciones, string="Sistema Operativo")
+
+
     precio = fields.Float(string='Precio')
-    ssoo = fields.Boolean(string="Sistema Operativo", default=False)
     calificaciones = fields.Text(string='Calificaciones Usuarios')
     mas_info = fields.Text(string='Más sobre el producto')

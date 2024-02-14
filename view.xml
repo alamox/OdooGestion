@@ -7,13 +7,13 @@
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="Ordenadores">
-					<field name="photo" widget="image" class="oe_avatar" width="100" height="100"/>
+                    <field name="photo" widget="image" class="oe_avatar" width="100" height="100"/>
                     <field name="nombre" />
                     <field name="grafica" />
                     <field name="SSD" />
                     <field name="RAM" />
                     <field name="ssoo" />
-					<field name="precio" /> 
+                    <field name="precio" /> 
                     <field name="calificaciones" />
                     <field name="mas_info" />
                 </tree>
@@ -48,8 +48,8 @@
                                     <field name="grafica" />
                                     <field name="SSD" />
                                     <field name="RAM" />
-                                    <field name="ssoo" />
-									<field name="precio" /> 
+                                    <field name="ssoo" /> <!-- Utilizar widget de interruptor -->
+                                    <field name="precio" /> 
                                 </group>
                             </page>
                             <page name="user_ratings" string="Calificaciones Usuarios">
