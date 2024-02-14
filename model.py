@@ -1,7 +1,7 @@
 from odoo import models, fields
 
 class OrdenadoresRegistro(models.Model):
-    _name = "ordenadores.ordenadoresregistro"
+    _name = "ordenadores.cochesregistro"
     
     photo = fields.Binary(string='Imagen de Producto')
     nombre= fields.Text(string='Nombre PC', required=True)
