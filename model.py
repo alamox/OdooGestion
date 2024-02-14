@@ -30,9 +30,6 @@ class OrdenadoresRegistro(models.Model):
         ('128gb', '128gb')  # Corregido aquí
     ], string='Memoria RAM')
     
-
-
-
     precio = fields.Float(string='Precio')
     ssoo = fields.Boolean(string="Sistema Operativo", default=False)
     calificaciones = fields.Text(string='Calificaciones Usuarios')
